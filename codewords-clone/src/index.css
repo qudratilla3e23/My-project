@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --color-cream: #faf9f5;
+  --color-ink: #17150f;
+  --color-ink-soft: #4a4740;
+  --color-muted: #8a8578;
+  --color-line: #e7e3d9;
+  --color-surface: #ffffff;
+
+  --color-lavender: #e6dcf6;
+  --color-lavender-deep: #d6c4ef;
+  --color-lavender-pill: #d9c8ef;
+
+  --color-maroon: #6e0f13;
+  --color-maroon-deep: #4a0a0d;
+
+  --color-mint: #d8f0c6;
+  --color-forest: #0f4432;
+
+  --radius-card: 1.1rem;
+}
+
+/* Dark theme — invert core tokens, accents stay put on purpose */
+:root.dark {
+  --color-cream: #121210;
+  --color-ink: #f3f1ea;
+  --color-ink-soft: #c7c3b8;
+  --color-muted: #8f8a7c;
+  --color-line: #2c2a24;
+  --color-surface: #1b1a16;
+
+  --color-lavender: #241f30;
+  --color-lavender-deep: #3c3252;
+  --color-lavender-pill: #443a5c;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* dotted background used behind hero */
+.dot-grid {
+  background-image: radial-gradient(
+    var(--color-line) 1.4px,
+    transparent 1.4px
+  );
+  background-size: 22px 22px;
+}
+
+/* Scroll-reveal: elements rise from below as they enter the viewport */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Infinite marquee, pauses on hover */
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-left var(--marquee-duration, 28s) linear infinite;
+}
+
+.marquee-track.reverse {
+  animation-direction: reverse;
+}
+
+.marquee-group:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+

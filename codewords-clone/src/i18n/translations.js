@@ -1,0 +1,160 @@
+export const languages = [
+  { code: "uz", label: "O'zbekcha" },
+  { code: "en", label: "English" },
+  { code: "ru", label: "Русский" },
+];
+
+export const translations = {
+  en: {
+    nav: { product: "Product", resources: "Resources", customers: "Customers", pricing: "Pricing" },
+    signIn: "Sign in",
+    startFree: "Start free",
+    hero: {
+      badge: "Create your own WhatsApp agents",
+      title: "Words in, working agents out.",
+      subtitle:
+        "Describe it. CodeWords builds the agent, connects your tools, and deploys it.",
+      placeholder: "Describe the agent you want to build",
+      voiceTitle: "Sign in to enable voice mode",
+      attachTitle: "Sign in to attach files",
+    },
+    logos: { eyebrow: "USED BY OPERATIONS TEAMS THAT CAN'T AFFORD DOWNTIME." },
+    how: {
+      eyebrow: "HOW IT WORKS",
+      title: "From description to live agent in minutes.",
+    },
+    why: { eyebrow: "WHY CODEWORDS", title: "Describe it. Cody builds it." },
+    integrations: {
+      eyebrow: "3,000+ INTEGRATIONS",
+      title: "Connects to anything you use in a single click.",
+      cta: "See all integrations",
+    },
+    whatsapp: {
+      eyebrow: "WHATSAPP AGENTS",
+      title: "The best place to build WhatsApp agents.",
+      text: "Most teams lose critical conversations in group chats and DMs. CodeWords puts a working agent into those conversations — one that responds, decides, and records the outcome.",
+    },
+    cta: {
+      eyebrow: "GET STARTED TODAY",
+      title: "Your first agent is free to build.",
+      subtitle:
+        "Describe what you need. Cody handles the build, the connections, and the deployment.",
+      primary: "Start for free",
+      secondary: "Talk to us",
+    },
+    faq: { title: "Still thinking about it?", contact: "Contact us" },
+    auth: {
+      welcome: "Welcome to CodeWords",
+      email: "Email address",
+      emailPlaceholder: "Your email address",
+      continue: "Continue",
+      or: "OR",
+      google: "Continue with Google",
+      linkedin: "Continue with LinkedIn",
+      noAccount: "No account?",
+      signUp: "Sign up",
+      close: "Close",
+    },
+  },
+  ru: {
+    nav: { product: "Продукт", resources: "Ресурсы", customers: "Клиенты", pricing: "Цены" },
+    signIn: "Войти",
+    startFree: "Начать бесплатно",
+    hero: {
+      badge: "Создайте своих WhatsApp-агентов",
+      title: "Слова на входе — рабочие агенты на выходе.",
+      subtitle:
+        "Опишите задачу. CodeWords создаст агента, подключит ваши инструменты и запустит его.",
+      placeholder: "Опишите агента, которого хотите создать",
+      voiceTitle: "Войдите, чтобы включить голосовой режим",
+      attachTitle: "Войдите, чтобы прикрепить файлы",
+    },
+    logos: { eyebrow: "НАМ ДОВЕРЯЮТ ОПЕРАЦИОННЫЕ КОМАНДЫ, ДЛЯ КОТОРЫХ ПРОСТОЙ НЕДОПУСТИМ." },
+    how: {
+      eyebrow: "КАК ЭТО РАБОТАЕТ",
+      title: "От описания до работающего агента за минуты.",
+    },
+    why: { eyebrow: "ПОЧЕМУ CODEWORDS", title: "Опишите — Коди создаст." },
+    integrations: {
+      eyebrow: "3000+ ИНТЕГРАЦИЙ",
+      title: "Подключается ко всему, чем вы пользуетесь, в один клик.",
+      cta: "Все интеграции",
+    },
+    whatsapp: {
+      eyebrow: "WHATSAPP-АГЕНТЫ",
+      title: "Лучшее место для создания WhatsApp-агентов.",
+      text: "Большинство команд теряют важные разговоры в групповых чатах и личных сообщениях. CodeWords внедряет рабочего агента прямо в эти разговоры — он отвечает, принимает решения и фиксирует результат.",
+    },
+    cta: {
+      eyebrow: "НАЧНИТЕ УЖЕ СЕГОДНЯ",
+      title: "Первый агент — бесплатно.",
+      subtitle:
+        "Опишите, что вам нужно. Коди возьмёт на себя сборку, подключения и развёртывание.",
+      primary: "Начать бесплатно",
+      secondary: "Связаться с нами",
+    },
+    faq: { title: "Всё ещё сомневаетесь?", contact: "Связаться с нами" },
+    auth: {
+      welcome: "Добро пожаловать в CodeWords",
+      email: "Электронная почта",
+      emailPlaceholder: "Ваш адрес электронной почты",
+      continue: "Продолжить",
+      or: "ИЛИ",
+      google: "Продолжить с Google",
+      linkedin: "Продолжить с LinkedIn",
+      noAccount: "Нет аккаунта?",
+      signUp: "Регистрация",
+      close: "Закрыть",
+    },
+  },
+  uz: {
+    nav: { product: "Mahsulot", resources: "Resurslar", customers: "Mijozlar", pricing: "Narxlar" },
+    signIn: "Kirish",
+    startFree: "Bepul boshlash",
+    hero: {
+      badge: "O'zingizning WhatsApp agentlaringizni yarating",
+      title: "So'z kiritasan, tayyor agent olasan.",
+      subtitle:
+        "Tasvirlab ber. CodeWords agentni quradi, vositalaringizni ulaydi va ishga tushiradi.",
+      placeholder: "Qurmoqchi bo'lgan agentingizni tasvirlab bering",
+      voiceTitle: "Ovozli rejimni yoqish uchun tizimga kiring",
+      attachTitle: "Fayl biriktirish uchun tizimga kiring",
+    },
+    logos: { eyebrow: "TO'XTAB QOLISHGA VAQTI YO'Q OPERATSION JAMOALAR TANLAYDI." },
+    how: {
+      eyebrow: "QANDAY ISHLAYDI",
+      title: "Tavsifdan ishlaydigan agentgacha — bir necha daqiqada.",
+    },
+    why: { eyebrow: "NEGA CODEWORDS", title: "Tasvirlab ber. Cody quradi." },
+    integrations: {
+      eyebrow: "3,000+ INTEGRATSIYA",
+      title: "Ishlatadigan har qanday vositangizga bir bosishda ulanadi.",
+      cta: "Barcha integratsiyalar",
+    },
+    whatsapp: {
+      eyebrow: "WHATSAPP AGENTLAR",
+      title: "WhatsApp agentlarini qurish uchun eng yaxshi joy.",
+      text: "Ko'p jamoalar guruh chatlari va shaxsiy xabarlarda muhim suhbatlarni yo'qotadi. CodeWords bu suhbatlarga ishlaydigan agentni qo'shadi — u javob beradi, qaror qabul qiladi va natijani qayd etadi.",
+    },
+    cta: {
+      eyebrow: "BUGUN BOSHLANG",
+      title: "Birinchi agentingiz bepul.",
+      subtitle: "Nima kerakligini tasvirlab bering. Cody qurish, ulanish va ishga tushirishni o'z zimmasiga oladi.",
+      primary: "Bepul boshlash",
+      secondary: "Biz bilan gaplashing",
+    },
+    faq: { title: "Hali ham o'ylayapsizmi?", contact: "Biz bilan bog'laning" },
+    auth: {
+      welcome: "CodeWords'ga xush kelibsiz",
+      email: "Elektron pochta",
+      emailPlaceholder: "Elektron pochta manzilingiz",
+      continue: "Davom etish",
+      or: "YOKI",
+      google: "Google bilan davom etish",
+      linkedin: "LinkedIn bilan davom etish",
+      noAccount: "Akkountingiz yo'qmi?",
+      signUp: "Ro'yxatdan o'tish",
+      close: "Yopish",
+    },
+  },
+};
